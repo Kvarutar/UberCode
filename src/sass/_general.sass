@@ -1,0 +1,426 @@
+header
+  position: relative
+  height: 50px
+
+nav
+  position: fixed
+  width: 100%
+  height: 50px
+  background-color: #212121
+  z-index: 2
+
+.hamburger
+  display: none
+
+.menu
+  display: flex
+  justify-content: space-between
+  padding: 13px 70px
+  margin: 0
+  list-style-type: none
+  .menu_link
+    color: #ffffff
+    font-size: 15px
+    font-weight: 300
+  .menu_item
+    border-right: 2px dotted black
+    padding-right: 28px
+    &:last-child
+      border-right: none //убирание последней палки в меню
+
+.subheader
+  position: absolute
+  top: 50px
+  width: 100%
+  height: 84px
+  background-color: rgba(0, 0, 0, 0.6)
+
+  .subheader_logo
+    display: block
+    max-width: 100%
+    margin-top: 16px
+
+  .subheader_official
+    margin-top: 6px
+    opacity: 0.5
+    color: #ffffff
+    font-size: 13px
+    font-weight: 400
+
+  .subheader_call
+    color: #ffffff
+    font-size: 12px
+    font-weight: 300
+    margin-top: 19px
+    text-align: right
+
+  .subheader_phone
+    display: block
+    margin-top: 8px
+    color: #ffffff
+    font-size: 22px
+    font-weight: 400
+    text-transform: uppercase
+    text-align: right
+    line-height: 12px
+
+  &_btn
+    margin-top: 19px
+    width: 172px
+    height: 46px
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12)
+    border: none
+    border-radius: 4px
+    background-image: linear-gradient(to top, $main_blue 0%, #4ce2ff 100%)
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+    color: #ffffff
+    font-size: 14px
+    font-weight: 400
+    text-transform: uppercase
+    +btn_hover
+  .xs-visible
+    display: none
+
+
+.promo
+  min-height: 800px
+  background: url('../img/Background.jpg') center (center / cover) no-repeat
+  padding: 150px 0 135px 0
+
+  .promo_header
+    color: #ffffff
+    font-weight: 700
+    text-transform: uppercase
+    font-size: 60px
+    line-height: 60px
+    margin: 0
+    text-align: center
+
+  .promo_subheader
+    color: #ffffff
+    font-weight: 700
+    text-transform: uppercase
+    font-size: 36px
+    line-height: 36px
+    margin: 0
+    margin-top: 22px
+    text-align: center
+
+  .promo_descr
+    color: #ffffff
+    font-size: 18px
+    font-weight: 400
+    line-height: 24px
+    text-align: center
+    margin-top: 23px
+
+  .promo_btn
+    display: block
+    margin: 118px auto 0 auto
+    width: 259px
+    height: 63px
+    box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12)
+    border: none
+    border-radius: 4px
+    background-image: linear-gradient(to top, $main_blue 0%, #4ce2ff 100%)
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+    color: #ffffff
+    font-size: 18px
+    font-weight: 400
+    text-transform: uppercase
+    +btn_hover
+
+.reasons
+  padding: 71px 0 65px 0
+  .reasons_item
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 35px
+    .reasons_round
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-right: 26px
+      width: 113px
+      height: 113px
+      background-color: $main_blue
+      border-radius: 100%
+    .reasons_descr
+      color: #202020
+      font-size: 15px
+      font-weight: 300
+      width: 343px
+      min-height: 142px
+  .reasons_descr 
+    span
+      color: #1eacc7
+      font-size: 17px
+      font-weight: 400
+      line-height: 21px
+
+.label
+  position: relative
+  margin: 0 auto
+  height: 24px
+  width: 112px
+  padding: 5px 12px
+  background-color: #000000
+  color: #ffffff
+  font-size: 11px
+  font-weight: 300
+  text-transform: uppercase
+  text-align: center
+  z-index: 1
+  &_white
+    background-color: #ffffff
+    color: #000000
+
+.title
+  position: relative
+  margin-bottom: 0
+  margin-top: 38px
+  color: #222222
+  font-size: 38px
+  font-weight: 700
+  text-transform: uppercase
+  text-align: center
+  z-index: 1
+  &_white
+    color: #ffffff
+
+.subtitle
+    position: relative
+    color: #222222
+    font-size: 17px
+    font-weight: 400
+    text-align: center
+    z-index: 1
+    line-height: 21px
+    &_white
+        color: #ffffff
+
+.mobile
+  min-height: 864px
+  padding: 48px 0 79px 0
+  background: url('../img/secondBG.jpg') center (center/cover) no-repeat
+  .row
+    margin-top: 32px
+  &_item
+    position: relative
+    width: 320px
+    height: 280px
+    margin: 0 auto
+    margin-bottom: 19px
+    padding-top: 92px
+    &_1
+        background: url('../img/OneClick.png')
+    &_2
+        background: url('../img/Reliability.png')
+    &_3
+        background: url('../img/InvisiblePrice.png')
+    &_4
+        background: url('../img/NoCash.png')
+    &_5
+        background: url('../img/Feedback.png')
+    &_6
+        background: url('../img/SplitCost.png')
+    .mobile_descr
+        color: #ffffff
+        font-size: 24px
+        font-weight: 400
+        text-transform: uppercase
+        text-align: center
+    .mobile_plus
+        display: flex
+        justify-content: center
+        align-items: center
+        position: absolute
+        bottom: 35px
+        left: 50%
+        transform: translateX(-50%)
+        width: 26px
+        height: 26px
+        background-color: #000000
+        border-radius: 100%
+        cursor: pointer
+        &::before
+            content: ''
+            display: block
+            width: 14px
+            height: 2px
+            background-color: $main_blue
+            transition: 0.3s
+        &::after
+            content: ''
+            position: absolute
+            left: 50%//правильный сдвиг
+            transform: translateX(-50%)//правильный сдвиг
+            display: block
+            width: 2px
+            height: 14px
+            background-color: $main_blue
+            transition: 0.3s
+        &:hover
+            &::before, &::after
+                background-color: $main_red
+
+.choice
+    position: relative
+    min-height: 896px
+    padding: 57px 0 138px 0
+    background: url(../img/secondBG.jpg) center (center/cover) no-repeat
+    .car
+        position: relative
+        display: block
+        margin: 0 auto
+        margin-top: 56px
+        z-index: 1
+    &_descr
+        color: #222222
+        font-size: 17px
+        font-weight: 300
+        line-height: 24px
+        text-align: center
+        min-width: 297px
+        margin-top: 4px
+    .black
+        position: absolute
+        background-color: #070716
+        top: 0
+        left: 0
+        height: 499px
+        width: 100%
+        z-index: 1
+
+.condition
+    //min-height: 920px
+    padding: 68px 0 84px 0
+    &_block
+        margin: 33px 0
+        &_nmb //правильно выравнивание снизу красных блоков
+            margin-bottom: 0px
+    &_title
+        color: #222222
+        color: #1ca8c3
+        font-size: 22px
+        font-weight: 400
+    &_list
+        list-style-type: none
+        padding-left: 50px
+        margin-top: 22px
+        li
+            position: relative//расположене посередине
+            // Text style for "Подключаем"
+            font-weight: 300
+            font-size: 17px
+            line-height: 24px
+            margin-bottom: 10px
+            &::before
+                content: ''
+                display: block//расположене посередине
+                position: absolute//расположене посередине
+                left: -32px//расположене посередине
+                top: 3px//50% расположене посередине
+                //transform: translateY(-50%)
+                width: 21px
+                height: 20px
+                background: url('../icons/BlueCheck.png') center (center/cover) no-repeat
+    &_descr
+        font-size: 17px
+        font-weight: 300
+        line-height: 24px
+        color: #1ca8c3
+    .warning
+        .condition_title
+            color: $main_red
+        .condition_list
+            li
+                &::before
+                    background: url('../icons/RedCheck.png') center (center/cover) no-repeat 
+
+.map
+    position: relative
+    min-height: 717px
+    background: url(../img/LastBG.jpg) center (center/cover) no-repeat
+    padding: 49px 0 49px 0
+    &_link
+        position: absolute
+        bottom: 49px
+        left: 43%
+        color: #1fbad6
+        font-size: 15px
+        font-weight: 400
+        text-transform: uppercase
+
+footer
+    min-height: 156px
+    padding-top: 14px
+    a
+        &:hover
+            text-decoration: none
+    .divider
+        display: block
+        margin: 0 auto
+        width: 299px
+        height: 4px
+        background-color: #1fbad6
+    .wrapper
+        display: flex 
+        justify-content: space-between
+        align-items: flex-start
+        padding-top: 32px
+    .wrapper > div 
+        width: 33%
+        &:nth-child(3)
+            display: flex 
+            justify-content: flex-end
+    .social
+        width: 160px
+        display: flex
+        justify-content: space-between
+        .item 
+            display: flex 
+            justify-content: center
+            align-items: center
+            margin: 0 4px 
+            width: 32px
+            height: 32px
+            background-color: #070716
+            border-radius: 100%
+            i 
+                color: #fff
+    .links
+        width: 390px
+        margin: 0 auto
+        .main
+            padding: 0 10px
+            display: flex
+            justify-content: space-between
+            a
+                color: #070716
+                font-size: 15px
+                font-weight: 300
+                text-transform: uppercase
+        .sec
+            margin-top: 10px
+            display: flex
+            justify-content: space-between
+            a
+                color: #999999
+                font-size: 11px
+                font-weight: 300
+                text-transform: uppercase
+        .lang
+            margin-top: 19px
+            color: #1fbad6
+            font-size: 11px
+            font-weight: 400
+            text-transform: uppercase
+            text-align: center
+    .end_line
+        height: 8px
+        background-color: #070716
+        width: 100%
+        margin-top: 31px 
+      
